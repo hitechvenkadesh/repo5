@@ -28,8 +28,7 @@ resource "aws_iam_group_membership" "team" {
   users = [
     aws_iam_user.sowmi.name,
     aws_iam_user.subha.name,
-	aws_iam_user.saran.name
-	
+    aws_iam_user.saran.name
   ]
 
   group = aws_iam_group.cse.name
